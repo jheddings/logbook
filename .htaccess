@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^([0-9]+)$ index.php?start=$1 [nc]
+RewriteRule ^([0-9]+)/(.+)/(.+)$ index.php?start=$1&sort=$2&direc=$3 [nc]
